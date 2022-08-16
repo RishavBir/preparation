@@ -1,13 +1,15 @@
 
-// SORT an array using MERGE SORT................. TC  is   O(nlogn) 
+
+                    // SORT an array using MERGE SORT................. TC  is   O(nlogn) 
 
 
 function merge (arr1,arr2){
-    let result = [], i = 0, j = 0
+  
+    let  i = 0, j = 0, result = []
 
-    while (i < arr1.length && j < arr2.length){
+    while(i < arr1.length && j < arr2.length){
         if(arr1[i] < arr2[j]){
-            result.push(arr1[i])
+            result.push (arr1[i])
             i++
         }else{
             result.push(arr2[j])
@@ -26,15 +28,15 @@ function merge (arr1,arr2){
 }
 
 function sortedArr (arr){
-    if(arr.length <= 1 ){
+    if(arr.length <= 1){
         return arr
     }
-    let middle = Math.floor(arr.length/2)
-    let left = sortedArr(arr.slice(0,middle))
-    let right = sortedArr(arr.slice(middle))
-   return merge(left,right)
+    let mid = Math.floor(arr.length/ 2)
+    let left = sortedArr(arr.slice(0,mid))
+    let right = sortedArr(arr.slice(mid))
+    return merge(left,right) 
 }
-console.log(sortedArr([2,7,8,-4,3,5]))
+console.log(sortedArr([2,7,8,-4,3,5]))    // [-4,2,3,5,7,8]
 
 
 
