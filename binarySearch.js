@@ -2,25 +2,23 @@
 
 // find the value from the array using binary search ........ O(logN)
 
-function Search (arr, value){
+function search(arr, value) {
+    let left = 0, right = arr.length - 1
 
- arr.sort((a,b)=>{
-    return a-b
- })
+    while (left <= right) {
 
- let mid = Math.floor(arr.length/2)
- let left = 0, right = arr.length-1
+        let mid = Math.floor((left + right) / 2)
 
- while(left <= right){
-    if(arr[mid] < value){
-        left = mid + 1
-    }else if(arr[mid] > value){
-        right = mid + 1
-    }else{
-        return mid
+        if (arr[mid] === value) {
+            return mid
+        } else if (arr[mid] < value) {
+            left = mid + 1
+        } else {
+            right = mid - 1
+        }
     }
- }
- return arr
+    return -1
 }
 
-console.log(Search([1,5,2,3,6,7], 5))   // 3
+console.log(search([1, 2, 3, 6, 7], 6))   // 3
+

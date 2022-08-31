@@ -16,4 +16,5 @@ return result
 }
 
 console.log(missingNum([4,7,9,10,14]))
+ 
 

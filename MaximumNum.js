@@ -2,13 +2,14 @@
 // Find the maximum number from the array
 
 function findMax(arr) {
-   let largest = -Infinity
+   
+    let largest = -Infinity
 
-   for(let i = 0; i<arr.length; i++){
-    if(largest < arr[i]){
-        largest = arr[i]
+    for(let i = 0; i < arr.length; i++){
+        if(largest < arr[i]){
+             largest = arr[i]
+        }
     }
-   }
-   return largest
+    return largest
 }
-console.log(findMax([1, 4, 6, -8]))
+console.log(findMax([2,4,8,9,-8]))

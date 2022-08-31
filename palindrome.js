@@ -2,10 +2,11 @@
 // Check whether the given word is palindrome or not
 
 function isPalindrome (str){
-    let middle = Math.floor(str.length/2)
+   
+    let mid = Math.floor(str.length/2)
 
-    for(let i=0 ; i<middle; i++){
-        if(str[i] !== str[str.length - 1 - i]){
+    for(let i=0; i < mid; i++){
+        if(str[i] !== str[str.length - i -1]){
             return false
         }
     }

@@ -24,20 +24,21 @@ console.log(removeDuplicates([1,2,2,3,3,3,4,5,6,7,7]))   // [1,2,3,4,5,6,7]
 
 
 function removeDuplicates(array) {
-    let result = [], obj = {};
-     
-    for (let i = 0; i < array.length; i++) {
-      if (obj[array[i]]) {
-        continue;
-      } else {
-        result.push(array[i]);   // if it get new element , it will push it in result and set its value as true
-        obj[array[i]] = true;
-      }
-    }
-    return result;
-  }
-console.log(removeDuplicates([1,2,2,3,3,3,4,5,6,7,7]))      // [1,2,3,4,5,6,7]
 
+let obj ={}, result = []
+
+for(let i = 0; i< array.length; i++){
+  if(obj[array[i]]){
+    continue
+  }else{
+    result.push(array[i])
+    obj[array[i]] = true
+  }
+}
+return result
+}
+   
+console.log(removeDuplicates([2,2,2,4,5,6,6,7]))  // [2,4,5,6,7]
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
