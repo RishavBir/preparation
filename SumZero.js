@@ -1,5 +1,5 @@
 
-// Find the subarr whose sum is zero.............. 
+                              // Find the subarr whose sum is zero.............. 
 
 
 function sumZero(arr) {
@@ -22,7 +22,7 @@ function sumZero(arr) {
   }
   return arr
 }
-console.log(sumZero([1,8,-1,0,4,-3])) // [-1,1]
+console.log(sumZero([1,8,-1,9,4,-3])) // [-1,1]
 
 
 

@@ -3,6 +3,11 @@
 // find the value from the array using binary search ........ O(logN)
 
 function search(arr, value) {
+
+    arr.sort((a,b)=>{
+        return a-b
+    })
+
     let left = 0, right = arr.length - 1
 
     while (left <= right) {
@@ -20,5 +25,5 @@ function search(arr, value) {
     return -1
 }
 
-console.log(search([1, 2, 3, 6, 7], 6))   // 3
+console.log(search([1, 2, 6, 3, 7], 6))   // 3
 
