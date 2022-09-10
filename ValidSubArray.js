@@ -15,4 +15,4 @@ function validSubArray (arr,subArr){
     return i == subArr.length
 }
 
-console.log(validSubArray([1,2,3,4,5,6], [1,5]))  // true
+console.log(validSubArray([1,2,3,4,5,6], [1,5]))  // true,

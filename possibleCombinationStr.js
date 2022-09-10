@@ -1,6 +1,6 @@
 
 
-                                // possible combination of string 
+                               // // possible combination of string 
 
 function possibleCombination (str){
 
@@ -15,6 +15,15 @@ function possibleCombination (str){
 }
 
 console.log(possibleCombination("dog"))
+
+
+
+
+
+
+
+
+
 
 
 
