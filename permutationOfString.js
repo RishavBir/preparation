@@ -1,7 +1,7 @@
 
-// print all the combinatgion of string having same length
+// print all the combination of string having same length
 
-function Permutations (string){
+ function Permutations (string){
 
     if (string.length < 2 ){
       return string
@@ -21,3 +21,11 @@ function Permutations (string){
   }
 
   console.log(Permutations("let"))
+
+
+
+
+
+
+
+

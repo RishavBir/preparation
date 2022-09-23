@@ -2,7 +2,7 @@
 
                                     // Find the Unique Element from the array
 
-function uniqueEle(arr) {
+ function uniqueEle(arr) {
 
    let obj = {}, result =[]
 
@@ -19,6 +19,9 @@ function uniqueEle(arr) {
 }
 
 console.log(uniqueEle([1, 3, 4, 3, 5, 6, 6]))    // [1,4,5]
+
+
+
 
 
 

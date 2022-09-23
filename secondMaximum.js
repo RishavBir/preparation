@@ -37,7 +37,7 @@ function secMaxElement (arr){
   return second
 }
 
-console.log(secMaxElement([-2,3,4,9.7,8]))   // 8
+console.log(secMaxElement([-2,3,4,9.7,11,1]))   // 9.7
 
 
 
